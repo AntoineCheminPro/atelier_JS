@@ -95,4 +95,101 @@ for (var customer of customers)
 {
     console.log(customer);
 }
+// exercice 7
+console.log("exercice 7");
+items =  ["first item", "second item", "third item", "fourth item"];
+for (var item of items) {
+    console.log (item)
+}
+// affiche undefined en l'état
+
+// exercice 8
+console.log("exercice 8");
+var citizen =  
+{ 
+    firstname : "John",
+    lastname : "Doe",
+    age : 45,  
+    income : 60000,
+    sexe : 0
+}
+console.log ("citizen identity : ");
+for (var ID in citizen)
+{
+   
+    console.log(ID + " : " +citizen[ID]);
+}
+
+
+// console.log("loops");
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Exemple ~~~~~~~~~~~~~~
+// var people = ["people1", "people2", "people3","people4","people5"];
+
+// var i = 0;
+// while (i < people.length)
+// {
+//     console.log(people[i]);
+  
+//     if (people[i] === "people5") 
+//     {
+//         console.log("A bientôt en normandie !");
+//     }   
+//     i++;
+// }
+
+// exercice 8b
+var citizen =  
+{ 
+    firstname : "John",
+    lastname : "Doe",
+    age : 45,  
+    income : 60000,
+    sexe : 1
+};
+console.log("exercice 8b");
+console.log ("citizen identity : ");
+if (citizen.sexe === 0){
+        citizen.sexe = "male";
+        }
+else {
+        citizen.sexe = "female";
+} 
+for (var ID in citizen) {
+    console.log(ID + " : " +citizen[ID]);
+}
+
+// exercice 9
+var citizens = [
+    {
+      firstname : "John",
+      lastname : "Doe"
+    },
+    {
+      firstname : "Anna",
+      lastname : "Molner"
+    },
+    {
+      firstname : "Harry",
+      lastname : "Trueman"
+    },
+    {
+      firstname : "Cecile",
+      lastname : "Mercier"
+    }
+  ];
+
+  i = 0;
+  while (i<citizens.length){
+    console.log("Citizen : ");
+    var guy = citizens[i];
+    for (var citoyen in guy);{
+    console.log(citoyen +" : "+guy[citoyen]);
+    }
+i++;
+      }
+
+
+// for (var prop in building) {
+//     console.log(prop + " : " +building[prop]);
+// }
 
