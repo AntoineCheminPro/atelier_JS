@@ -90,9 +90,9 @@ customers = [
     "Zoe Durst"
   ];
   var titre = "List of all customers : "
-  console.log(titre.big());
+  console.log(titre);
 for (var customer of customers)
 {
-    console.log(customer.big());
+    console.log(customer);
 }
 
