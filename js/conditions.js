@@ -176,7 +176,7 @@ var meal = {
 var status
 if (meal.temperature<meal.cookedAt)
 {
-    status = "Cooked";
+    status = "Uncooked";
 }
 else if (meal.temperature>meal.cookedAt)
 {
@@ -186,4 +186,22 @@ else {
     status = "Cooked";
 }
 console.log(status);
+
+// Exercice 8
+console.log("exercice 8");
+
+var number = 42;
+if (number < 0) 
+{
+    console.log("Please enter a number at least greater than 0");
+}
+else if (number % 2 === 0)
+{
+    console.log("number is pair");
+}
+else
+{
+    console.log("number is odd");
+}
+
 
