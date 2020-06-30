@@ -168,24 +168,25 @@ else
 }
 
 // Exercice 7
+console.log("exercice 7");
 var meal = {
     foodType : "Meat",
     cookedAt : 80,
-    temperature : 60
-}
-var status
+    temperature : 80
+};
+statuts = ['Uncooked', 'cooked', 'Overcooked'];
+console.log(statuts);
 if (meal.temperature<meal.cookedAt)
 {
-    status = "Uncooked";
+ console.log(statuts[0]);
 }
 else if (meal.temperature>meal.cookedAt)
 {
-    status = "Overcooked";
+    console.log(statuts[2]);
 }
 else {
-    status = "Cooked";
+    console.log(statuts[1]);
 }
-console.log(status);
 
 // Exercice 8
 console.log("exercice 8");
