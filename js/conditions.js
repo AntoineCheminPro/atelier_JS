@@ -168,7 +168,22 @@ else
 }
 
 // Exercice 7
-
-
-
+var meal = {
+    foodType : "Meat",
+    cookedAt : 80,
+    temperature : 60
+}
+var status
+if (meal.temperature<meal.cookedAt)
+{
+    status = "Cooked";
+}
+else if (meal.temperature>meal.cookedAt)
+{
+    status = "Overcooked";
+}
+else {
+    status = "Cooked";
+}
+console.log(status);
 
