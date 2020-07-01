@@ -58,12 +58,14 @@ for (var i=0; i <=100 ; i+=2)
 console.log("exercice 4");
 for (var i=0; i <=100 ; i++)
 { 
-if (i%2 === 0 ){
+  if (i%2 === 0 )
+  {
     console.log(i +" is even");
-}
-else {
+  }
+else 
+  {
     console.log(i +" is odd");
-}
+  }
 }
 
 // exercice 5
@@ -107,11 +109,11 @@ for (var item of items) {
 console.log("exercice 8");
 var citizen =  
 { 
-    firstname : "John",
-    lastname : "Doe",
-    age : 45,  
-    income : 60000,
-    sexe : 0
+  firstname : "John",
+   lastname : "Doe",
+   age : 45,  
+   income : 60000,
+   sexe : 0
 }
 console.log ("citizen identity : ");
 for (var ID in citizen)
@@ -120,76 +122,83 @@ for (var ID in citizen)
     console.log(ID + " : " +citizen[ID]);
 }
 
-
-// console.log("loops");
-//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Exemple ~~~~~~~~~~~~~~
-// var people = ["people1", "people2", "people3","people4","people5"];
-
-// var i = 0;
-// while (i < people.length)
-// {
-//     console.log(people[i]);
-  
-//     if (people[i] === "people5") 
-//     {
-//         console.log("A bientôt en normandie !");
-//     }   
-//     i++;
-// }
-
 // exercice 8b
 var citizen =  
 { 
-    firstname : "John",
-    lastname : "Doe",
-    age : 45,  
-    income : 60000,
-    sexe : 1
+  firstname : "John",
+  lastname : "Doe",
+  age : 45,  
+  income : 60000,
+  sexe : 0
 };
 console.log("exercice 8b");
 console.log ("citizen identity : ");
-if (citizen.sexe === 0){
-        citizen.sexe = "male";
-        }
-else {
-        citizen.sexe = "female";
-} 
+
 for (var ID in citizen) {
+  if (ID === "sexe")
+  {
+    if (citizen.sexe === 0)
+    {
+      console.log(" sexe : male");
+    }
+    else 
+    {
+      console.log("sexe : female");
+    }
+  }
+  else 
+  {
     console.log(ID + " : " +citizen[ID]);
+  }
+//   
+
+//     
 }
 
 // exercice 9
-var citizens = [
-    {
-      firstname : "John",
-      lastname : "Doe"
-    },
-    {
-      firstname : "Anna",
-      lastname : "Molner"
-    },
-    {
-      firstname : "Harry",
-      lastname : "Trueman"
-    },
-    {
-      firstname : "Cecile",
-      lastname : "Mercier"
-    }
-  ];
+console.log("exo 9");
+var citizens =
+[
+  {
+  firstname : "John",
+  lastname : "Doe"
+  },
+  {
+  firstname : "Anna",
+  lastname : "Molner"
+  },
+  {
+  firstname : "Harry",
+  lastname : "Trueman"
+  },
+  {
+  firstname : "Cecile",
+  lastname : "Mercier"
+  }
+];
 
-  i = 0;
-  while (i<citizens.length){
-    console.log("Citizen : ");
-    var guy = citizens[i];
-    for (var citoyen in guy);{
-    console.log(citoyen +" : "+guy[citoyen]);
-    }
+i = 0;
+while (i<citizens.length)
+{
+  console.log("Citizen : ");
+  var guy = citizens[i];
+   
+  for (var citoyen in guy)
+  {
+    console.log(citoyen + " : " + guy[citoyen]);
+  }
 i++;
-      }
+}
 
-
+// //exemple for in loop
+// console.log ("for in loop");
+// var building = {
+//     type : "house",
+//     year : 1924,
+//     color : "green",
+//     surface : 110
+// }
+// console.log(building);
 // for (var prop in building) {
 //     console.log(prop + " : " +building[prop]);
 // }
-
