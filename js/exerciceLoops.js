@@ -102,6 +102,7 @@ console.log("exercice 7");
 items =  ["first item", "second item", "third item", "fourth item"];
 for (var item of items) {
     console.log (item)
+<<<<<<< HEAD
 }
 // affiche undefined en l'état
 
@@ -188,8 +189,12 @@ for (var dude of citizens)
     console.log(citoyen + " : " + dude[citoyen]);
   }
 i++;
+=======
+>>>>>>> dev
 }
+// affiche undefined en l'état
 
+<<<<<<< HEAD
 // //exemple for in loop
 // console.log ("for in loop");
 // var building = {
@@ -202,3 +207,87 @@ i++;
 // for (var prop in building) {
 //     console.log(prop + " : " +building[prop]);
 // }
+=======
+// exercice 8
+console.log("exercice 8");
+var citizen =  
+{ 
+  firstname : "John",
+   lastname : "Doe",
+   age : 45,  
+   income : 60000,
+   sexe : 0
+}
+console.log ("citizen identity : ");
+for (var ID in citizen)
+{
+   
+    console.log(ID + " : " +citizen[ID]);
+}
+
+// exercice 8b
+var citizen =  
+{ 
+  firstname : "John",
+  lastname : "Doe",
+  age : 45,  
+  income : 60000,
+  sexe : 0
+};
+console.log("exercice 8b");
+console.log ("citizen identity : ");
+
+for (var ID in citizen) {
+  if (ID === "sexe")
+  {
+    if (citizen.sexe === 0)
+    {
+      console.log(" sexe : male");
+    }
+    else 
+    {
+      console.log("sexe : female");
+    }
+  }
+  else 
+  {
+    console.log(ID + " : " +citizen[ID]);
+  }
+//   
+
+//     
+}
+
+// exercice 9
+console.log("exo 9");
+var citizens =
+[
+  {
+  firstname : "John",
+  lastname : "Doe"
+  },
+  {
+  firstname : "Anna",
+  lastname : "Molner"
+  },
+  {
+  firstname : "Harry",
+  lastname : "Trueman"
+  },
+  {
+  firstname : "Cecile",
+  lastname : "Mercier"
+  }
+];
+
+i = 0;
+for (var dude of citizens)
+{
+  console.log("Citizen : ");
+  for (var citoyen in dude)
+  {
+    console.log(citoyen + " : " + dude[citoyen]);
+  }
+i++;
+}
+>>>>>>> dev
