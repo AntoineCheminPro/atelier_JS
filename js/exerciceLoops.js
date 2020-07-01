@@ -178,14 +178,14 @@ var citizens =
 ];
 
 i = 0;
-while (i<citizens.length)
+for (var dude of citizens)
 {
   console.log("Citizen : ");
-  var guy = citizens[i];
+  
    
-  for (var citoyen in guy)
+  for (var citoyen in dude)
   {
-    console.log(citoyen + " : " + guy[citoyen]);
+    console.log(citoyen + " : " + dude[citoyen]);
   }
 i++;
 }
