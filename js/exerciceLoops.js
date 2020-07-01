@@ -58,12 +58,14 @@ for (var i=0; i <=100 ; i+=2)
 console.log("exercice 4");
 for (var i=0; i <=100 ; i++)
 { 
-if (i%2 === 0 ){
+  if (i%2 === 0 )
+  {
     console.log(i +" is even");
-}
-else {
+  }
+else 
+  {
     console.log(i +" is odd");
-}
+  }
 }
 
 // exercice 5
@@ -90,9 +92,98 @@ customers = [
     "Zoe Durst"
   ];
   var titre = "List of all customers : "
-  console.log(titre.big());
+  console.log(titre);
 for (var customer of customers)
 {
-    console.log(customer.big());
+    console.log(customer);
+}
+// exercice 7
+console.log("exercice 7");
+items =  ["first item", "second item", "third item", "fourth item"];
+for (var item of items) {
+    console.log (item)
+}
+// affiche undefined en l'état
+
+// exercice 8
+console.log("exercice 8");
+var citizen =  
+{ 
+  firstname : "John",
+   lastname : "Doe",
+   age : 45,  
+   income : 60000,
+   sexe : 0
+}
+console.log ("citizen identity : ");
+for (var ID in citizen)
+{
+   
+    console.log(ID + " : " +citizen[ID]);
 }
 
+// exercice 8b
+var citizen =  
+{ 
+  firstname : "John",
+  lastname : "Doe",
+  age : 45,  
+  income : 60000,
+  sexe : 0
+};
+console.log("exercice 8b");
+console.log ("citizen identity : ");
+
+for (var ID in citizen) {
+  if (ID === "sexe")
+  {
+    if (citizen.sexe === 0)
+    {
+      console.log(" sexe : male");
+    }
+    else 
+    {
+      console.log("sexe : female");
+    }
+  }
+  else 
+  {
+    console.log(ID + " : " +citizen[ID]);
+  }
+//   
+
+//     
+}
+
+// exercice 9
+console.log("exo 9");
+var citizens =
+[
+  {
+  firstname : "John",
+  lastname : "Doe"
+  },
+  {
+  firstname : "Anna",
+  lastname : "Molner"
+  },
+  {
+  firstname : "Harry",
+  lastname : "Trueman"
+  },
+  {
+  firstname : "Cecile",
+  lastname : "Mercier"
+  }
+];
+
+i = 0;
+for (var dude of citizens)
+{
+  console.log("Citizen : ");
+  for (var citoyen in dude)
+  {
+    console.log(citoyen + " : " + dude[citoyen]);
+  }
+i++;
+}
