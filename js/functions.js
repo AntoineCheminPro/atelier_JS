@@ -68,3 +68,72 @@ if (!sum)
 {
 console.log("Attention nous n'avons pas pu calculer de somme");
 }
+
+
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// fonctions natives
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+~console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+console.log("\n fonctions natives \n ");
+// var dog = 
+// {
+//     name : "Medor",
+//     age : 4,
+//     color : "brown",
+//     welcome : function () 
+//     {
+//         console.log(this.name + " come and say : 'hello'");
+//     },
+//     // on utilise this pour faire refèrence à l'objet 
+//     //dans lequel on travaille.
+//     run : function ()
+//     {
+//         console.log("The dog run");
+//     }
+// };
+// console.log("the dog name is " + dog.name);
+// dog.welcome();
+// dog.name = "Rex";
+// dog.welcome ();
+// cette premiére version n'est utile que si on n'a qu'un dog
+
+function Dog (name, age, color)
+{
+    this.name = name,
+    this.age = age,
+    this.color = color,
+    this.welcome = function (text) 
+    {
+        console.log(this.name + " come and say : " + text);
+    },
+    this.run = function ()
+    {
+        console.log(this.name + " run");
+    }
+}
+var dog1 = new Dog ("medor", 4, "brown");
+console.log (dog1);
+var dog2 = new Dog ("Rex", 2, "grey");
+console.log(dog2);
+dog1.welcome("hello");
+dog2.welcome("waf waf");
+dog1.run();
+dog2.run();
+// ici grâce au modéle de l'objet chien, je peux avoir
+// plusieurs occurences dog1 et Dog2 qui répondent aux
+// mêmes propriétés.
+
+// exemple of native method
+console.log("exemple d'untilisation de push");
+var colors = ["green", "red", "black"];
+console.log(colors);
+colors.push("yellow");
+console.log(colors);
+colors.push("white", "orange", "purple");
+console.log(colors);
+
+
+
+
+
