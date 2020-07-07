@@ -84,4 +84,28 @@ console.log(separateur);
 console.log("exercice 6");
 // Exercice 6
 
+var name = "Paul Dumas";
+name = name.toLowerCase();
+// je converti ma string en basse casse
+// String.prototype.toUpperCase()
+// RegExp.prototype.ignoreCase (à tester)
 
+var expectedName = "paul dumas";
+
+if (name === expectedName) {
+  console.log("OK Paul you can come in");
+}
+else {
+  console.log("We do not know you");
+}
+// fonction utile pour identifier un utilisateur ou un produit 
+// quelle que soit la casse => "LAPIN" === "lapin"
+
+// Exercice 7
+console.log(separateur);
+console.log("exercice 7");
+// Exercice 7
+var newStudent = "Ryan Oper";
+var students = ["John Doe", "Jane Doe", "Marc Alm", "Jimmy Turner"];
+console.log(newStudent);
+console.log(students);
