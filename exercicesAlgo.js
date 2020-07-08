@@ -122,23 +122,74 @@
 //     console.log(i);
 //     }
 // }
-console.log("exercice 1");
-console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-// exercice 1
-function damier(){
-    let alternanceNoirBlanc ="";
-    for (var x = 1 ; x <= 4; x++){
-        alternanceNoirBlanc += "\n";
-        for (var i = 0 ; i <= 8; i++){
-            alternanceNoirBlanc += " #";
-        }
-    alternanceNoirBlanc += "\n";
-        for (var j = 0 ; j <= 8; j++){
-            alternanceNoirBlanc +="# ";
-        }
-    }
-return alternanceNoirBlanc;
-}
-let plateau = damier();
+// console.log("exercice 1");
+// console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+// // exercice 1
+// function damier(){
+//     let alternanceNoirBlanc ="";
+//     for (var x = 1 ; x <= 4; x++){
+//         alternanceNoirBlanc += "\n";
+//         for (var i = 0 ; i <= 8; i++){
+//             alternanceNoirBlanc += " #";
+//         }
+//     alternanceNoirBlanc += "\n";
+//         for (var j = 0 ; j <= 8; j++){
+//             alternanceNoirBlanc +="# ";
+//         }
+//     }
+// return alternanceNoirBlanc;
+// }
+// let plateau = damier();
 
-console.log(plateau);
+// console.log(plateau);
+
+// console.log("exercice 2");
+// console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+// exercice 2
+
+// let binaire =[1,0,0,0];
+// function movement (i){
+//     for (i = 0 ; i < binaire.length; i++){
+//         binaire.forEach(element => console.log(element));
+//         binaire.unshift(0);
+//         binaire.pop();
+//         console.log ("-------");
+//     }
+//     return binaire;
+// }
+// binaire = movement();
+
+// console.log("exercice 3");
+// console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+// // exercice 3
+
+// let sold = prompt ("quel est le montant du panier?");
+// sold = Math.round(sold,0)
+// function isEven(sold){
+//    if (sold%2 ===0){
+//        return true;
+//    }
+//    else {
+//        return false;
+//    }
+// ;}
+// let statutSold = isEven(sold);
+// alert (statutSold);
+
+console.log("exercice 4");
+console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+// exercice 4
+
+var factorNumber = prompt("de quel nombre souhaites tu la factorielle?");
+function factorielle (factorNumber){
+    if (Number.isInteger(factorNumber)){
+        for (var i = 1; i <= factorNumber; i++){
+            var sum = 1;
+            sum += sum * i;
+        }
+        console.log (sum);
+    }
+    else {
+        console.log("erreur");
+    }
+}
