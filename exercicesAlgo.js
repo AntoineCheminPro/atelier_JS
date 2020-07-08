@@ -124,24 +124,27 @@
 // }
 // console.log("exercice 1");
 // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-// // exercice 1
+// exercice 1
+// var alternanceNoirBlanc ="";
 // function damier(){
-//     let alternanceNoirBlanc ="";
-//     for (var x = 1 ; x <= 4; x++){
-//         alternanceNoirBlanc += "\n";
-//         for (var i = 0 ; i <= 8; i++){
-//             alternanceNoirBlanc += " #";
-//         }
-//     alternanceNoirBlanc += "\n";
-//         for (var j = 0 ; j <= 8; j++){
-//             alternanceNoirBlanc +="# ";
-//         }
+//     for (var x = 0 ; x <= 8; x++){
+//         for (var y = 0 ; y <= 16 ; y++){
+//             if ((x+y) % 2 === 0){
+//                 alternanceNoirBlanc += "#";
+//             }
+//             else{
+//                 alternanceNoirBlanc += " ";
+//             }
+//         } 
+//         alternanceNoirBlanc += "\n"; 
 //     }
-// return alternanceNoirBlanc;
+//     return alternanceNoirBlanc;
 // }
-// let plateau = damier();
+// console.log(damier());
+   
 
-// console.log(plateau);
+     
+
 
 // console.log("exercice 2");
 // console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
@@ -176,20 +179,20 @@
 // let statutSold = isEven(sold);
 // alert (statutSold);
 
-console.log("exercice 4");
-console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-// exercice 4
+// console.log("exercice 4");
+// console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+// // exercice 4
 
-var factorNumber = prompt("de quel nombre souhaites tu la factorielle?");
-function factorielle (factorNumber){
-    if (Number.isInteger(factorNumber)){
-        for (var i = 1; i <= factorNumber; i++){
-            var sum = 1;
-            sum += sum * i;
-        }
-        console.log (sum);
-    }
-    else {
-        console.log("erreur");
-    }
-}
+// var factorNumber = prompt("de quel nombre souhaites tu la factorielle?");
+// function factorielle (factorNumber){
+//     if (Number.isInteger(factorNumber)){
+//         for (var i = 1; i <= factorNumber; i++){
+//             var sum = 1;
+//             sum += sum * i;
+//         }
+//         console.log (sum);
+//     }
+//     else {
+//         console.log("erreur");
+//     }
+// }
