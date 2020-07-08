@@ -196,3 +196,47 @@
 //         console.log("erreur");
 //     }
 // }
+
+
+// let array = x.split("");
+// function oneAndNull (array){
+//  let arrayNumber = "";
+//   for (let j = 0; j <array.length ; j++){
+//     if (parseInt(array[j]) > 4){
+//         arrayNumber += "1";
+//     }
+//     else
+//     {
+//      arrayNumber += "0";
+//     }
+//   }
+// return arrayNumber; 
+// }
+
+// console.log(oneAndNull(x));
+
+// solution :
+// function fakeBin(x) {
+    // return x.split('').map(n => n < 5 ? 0 : 1).join('');
+// }
+
+// console.log("test codewars");
+// var x = [1, 2, 3];
+// function grow(x){
+// var growth = 1;
+//     for (let i of x){
+//     growth = growth * i;
+//     }
+// return console.log(growth);
+// }
+
+// let classPoints = [2, 3];
+// let yourPoints = 5;
+// function betterThanAverage(classPoints, yourPoints) {
+//     let classSum = classPoints.reduce((a, b) => a + b, 0);
+//     classAverage = classSum / classPoints.length;
+// let betterThanAverage = (yourPoints > classAverage ? true : false);
+// return betterThanAverage;
+// }
+// console.log(betterThanAverage(classPoints, yourPoints));   
+
