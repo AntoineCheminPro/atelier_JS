@@ -103,23 +103,42 @@
 //     star += "*";
 //     console.log(star);
 // }
-console.log("exercice 9");
+// console.log("exercice 9");
+// console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+// // exercice 9
+// for (i=1; i<= 100; i++ ){
+//     if (i%15 === 0){
+//       console.log(" FIZZBUZZ");
+//     }
+//     else if (i%5 === 0)
+//     {
+//        console.log(" BUZZ");
+//     }
+//     else if (i%3 === 0)
+//     {
+//       console.log(" FIZZ");
+//     }
+//     else {
+//     console.log(i);
+//     }
+// }
+console.log("exercice 1");
 console.log("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-// exercice 9
-for (i=1; i<= 100; i++ ){
-    let show ="";
-    if (i%15 === 0)
-    {
-       show = (i + " FIZZBUZZ");
+// exercice 1
+function damier(){
+    let alternanceNoirBlanc ="";
+    for (var x = 1 ; x <= 4; x++){
+        alternanceNoirBlanc += "\n";
+        for (var i = 0 ; i <= 8; i++){
+            alternanceNoirBlanc += " #";
+        }
+    alternanceNoirBlanc += "\n";
+        for (var j = 0 ; j <= 8; j++){
+            alternanceNoirBlanc +="# ";
+        }
     }
-    else if (i%5 === 0)
-    {
-        show =(i + " BUZZ");
-    }
-    else if (i%3 === 0)
-    {
-        show =(i + " FIZZ");
-    }
-    show =i;
-console.log(show);
+return alternanceNoirBlanc;
 }
+let plateau = damier();
+
+console.log(plateau);
